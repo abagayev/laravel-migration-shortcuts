@@ -1,0 +1,16 @@
+{
+    "name": "abagayev/laravel-migration-shortcuts",
+    "description": "Let's make migrations DRY",
+    "type": "library",
+    "autoload": {
+        "psr-4": { "Abagayev\\Laravel\\MigrationShortcuts\\": "src/" }
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Anton Bagaiev",
+            "email": "tony@dontgiveafish.com"
+        }
+    ],
+    "require": {}
+}
