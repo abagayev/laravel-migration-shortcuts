@@ -37,16 +37,16 @@ abstract class AddColumnMigration extends Migration
     public function up()
     {
         Schema::table($this->table, function (Blueprint $table) {
-            $table
+            $blueprint = $table
                 ->{$this->type}($this->column, ...$this->parameters)
                 ->nullable($this->nullable);
 
             if (!empty($this->index)) {
-                $table->index();
+                $blueprint->index();
             }
 
             if (!empty($this->after)) {
-                $table->after($this->after);
+                $blueprint->after($this->after);
             }
         });
     }

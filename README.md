@@ -28,6 +28,7 @@ class AddNewColumnMigration extends AddColumnMigration
 - Add a table
 - Rename a table
 - Delete a table
+- Empty migration
 
 ### Features coming soon:
 
