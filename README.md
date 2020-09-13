@@ -1,24 +1,26 @@
 # Laravel migration shortcuts
 
-Use this shortcut to add a new column: 
+![Migration](./docs/migration.jpg)
+
+This package is here to make migrations DRY again. 
+
+For example, add soft deletes migration in a super short way: 
 
 ```php
-use Abagayev\Laravel\MigrationShortcuts\Migrations\AddColumnMigration;
+use Abagayev\Laravel\MigrationShortcuts\Migrations\AddSoftDeletesMigration;
 
-class AddNewColumnMigration extends AddColumnMigration
+class AddSoftDeletesToTableMigration extends AddSoftDeletesMigration
 {
     protected $table = 'table_name';
-    protected $column = 'column_name';
-    protected $type = 'string';
 }
 ```
 
 ### Current shortcuts supported
 
-- Add new column
-- Add timestamps
-- Add soft deleted
-- Insert rows
+- [Add a new column](./docs/migrations/AddColumnMigration.md)
+- [Add timestamps](./docs/migrations/AddTimestampsMigration.md)
+- [Add soft deleted](./docs/migrations/AddSoftDeletesMigration.md)
+- [Insert rows](./docs/migrations/InsertRowsMigration.md)
 
 ### Shortcuts coming soon:
 
@@ -33,8 +35,8 @@ class AddNewColumnMigration extends AddColumnMigration
 ### Features coming soon:
 
 - Command to create migrations
-- More examples
 
-### Afterwords
+### Contribution
 
-Let's make migrations DRY!
+Feel free to add comments, issues, pull requests or buy me a coffee:
+https://www.buymeacoffee.com/tonybug
