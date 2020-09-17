@@ -21,7 +21,7 @@ class AddSoftDeletesToTableMigration extends AddSoftDeletesMigration
 - [Add timestamps](./docs/migrations/AddTimestampsMigration.md)
 - [Add soft deleted](./docs/migrations/AddSoftDeletesMigration.md)
 - [Insert rows](./docs/migrations/InsertRowsMigration.md)
-- [Delete column](./docs/migrations/InsertRowsMigration.md)
+- [Delete a column](./docs/migrations/DeleteColumnMigration.md)
 
 ### Shortcuts coming soon:
 
