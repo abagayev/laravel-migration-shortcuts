@@ -2,10 +2,10 @@
 
 namespace Abagayev\Laravel\MigrationShortcuts\Migrations;
 
-abstract class DeleteColumnMigration extends AddColumnMigration
+abstract class DropColumnMigration extends AddColumnMigration
 {
-    /** @var bool If you need to recreate column in down method */
-    protected $recreateColumn = false;
+    /** @var bool */
+    protected $addColumnOnRollback = false;
 
     /**
      * Run the migrations.
@@ -24,7 +24,7 @@ abstract class DeleteColumnMigration extends AddColumnMigration
      */
     public function down()
     {
-        if ($this->recreateColumn) {
+        if ($this->addColumnOnRollback) {
             parent::up();
         }
     }
