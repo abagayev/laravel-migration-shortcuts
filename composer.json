@@ -12,5 +12,8 @@
             "email": "tony@dontgiveafish.com"
         }
     ],
-    "require": {}
+    "require-dev": {
+        "phpunit/phpunit": "^10.2",
+        "orchestra/testbench": "^8.5"
+    }
 }
