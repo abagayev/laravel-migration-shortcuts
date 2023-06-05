@@ -5,6 +5,9 @@ namespace Migrations;
 use Abagayev\Laravel\MigrationShortcuts\Migrations\AddTimestampsMigration;
 use Orchestra\Testbench\TestCase;
 
+/**
+ * @covers Abagayev\Laravel\MigrationShortcuts\Migrations\AddTimestampsMigration
+ */
 class AddTimestampsMigrationTest extends TestCase
 {
     public function testUp()
