@@ -1,5 +1,9 @@
 # Laravel migration shortcuts
 
+![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/abagayev/laravel-migration-shortcuts/tests.yml)
+[![codecov](https://codecov.io/gh/abagayev/laravel-migration-shortcuts/branch/master/graph/badge.svg?token=UO0K5QC7XC)](https://codecov.io/gh/abagayev/laravel-migration-shortcuts)
+[![Total Downloads](http://poser.pugx.org/abagayev/laravel-migration-shortcuts/downloads)](https://packagist.org/packages/abagayev/laravel-migration-shortcuts)
+
 ![Migration](./docs/migration.jpg)
 
 This package is here to make migrations DRY again. 
