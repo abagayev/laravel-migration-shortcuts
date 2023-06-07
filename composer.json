@@ -5,6 +5,9 @@
     "autoload": {
         "psr-4": { "Abagayev\\Laravel\\MigrationShortcuts\\": "src/" }
     },
+    "autoload-dev": {
+        "psr-4": { "Abagayev\\Tests\\": "tests/" }
+    },
     "license": "MIT",
     "authors": [
         {
