@@ -1,25 +1,29 @@
 <?php
 
-namespace Migrations;
+namespace Abagayev\Tests\Migrations;
 
 use Abagayev\Laravel\MigrationShortcuts\Migrations\AddTimestampsMigration;
-use Orchestra\Testbench\TestCase;
+use Abagayev\Tests\Helpers\MigrationTestCase;
 
 /**
  * @covers Abagayev\Laravel\MigrationShortcuts\Migrations\AddTimestampsMigration
  */
-class AddTimestampsMigrationTest extends TestCase
+class AddTimestampsMigrationTest extends MigrationTestCase
 {
-    public function testUp()
+    public static function migrationProvider(): array
     {
-        $migration = new class extends AddTimestampsMigration {
-            //
-        };
-
-        $migrator = app('migrator');
-        $db = $migrator->resolveConnection(null);
-        $queries = array_column($db->pretend(fn() => $migration->up()), 'query');
-
-        $this->assertEquals(["alter table `table_name` add `created_at` timestamp null, add `updated_at` timestamp null"], $queries);
+        return [
+            [
+                new class extends AddTimestampsMigration {
+                    //
+                },
+                [
+                    "alter table `table_name` add `created_at` timestamp null, add `updated_at` timestamp null"
+                ],
+                [
+                    "alter table `table_name` drop `created_at`, drop `updated_at`"
+                ],
+            ],
+        ];
     }
 }
