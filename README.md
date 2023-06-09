@@ -26,6 +26,7 @@ class AddSoftDeletesToTableMigration extends AddSoftDeletesMigration
 - [Add soft deleted](./docs/migrations/AddSoftDeletesMigration.md)
 - [Insert rows](./docs/migrations/InsertRowsMigration.md)
 - [Drop a column](./docs/migrations/DropColumnMigration.md)
+- [Empty migration](./docs/migrations/EmptyMigration.md)
 
 ### Shortcuts coming soon:
 
@@ -34,7 +35,6 @@ class AddSoftDeletesToTableMigration extends AddSoftDeletesMigration
 - Add a table
 - Rename a table
 - Delete a table
-- Empty migration
 
 ### Features coming soon:
 
@@ -42,5 +42,5 @@ class AddSoftDeletesToTableMigration extends AddSoftDeletesMigration
 
 ### Contribution
 
-Feel free to add comments, issues, pull requests or buy me a coffee:
+Feel free to add comments, issues, pull requests or buy me a coffee: 
 https://www.buymeacoffee.com/tonybug
