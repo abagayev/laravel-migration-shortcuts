@@ -7,6 +7,7 @@ use Abagayev\Tests\Helpers\MigrationTestCase;
 
 /**
  * @covers Abagayev\Laravel\MigrationShortcuts\Migrations\DropColumnMigration
+ * @covers Abagayev\Laravel\MigrationShortcuts\Migrations\AddColumnMigration
  */
 class DropColumnMigrationTest extends MigrationTestCase
 {
